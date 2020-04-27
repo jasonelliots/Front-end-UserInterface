@@ -1,26 +1,106 @@
 header {
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-between;
     padding: 2%; 
-    background-image: url('../images/horizontalplant.jpg'); 
+    background-image: url('../images/horizontalplant.png'); 
     width: 100%; 
     height: 100vh; 
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
-    h1 {
-        padding: 3% 6% 0%; 
-        text-align: center;
+    .navBar{
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between;
+
+        h1 {
+            width: 40%; 
+            padding: 3% 3% 0%; 
+            text-align: center;
+        }
+    
+        nav {
+            width: 40%;
+            display: flex; 
+    
+            a{
+                padding: 10% 8% 0%; 
+                width: 100%;
+                font-size: 1.2rem;
+                
+                &:hover{
+                    color: @accent; 
+                }
+            }
+        }
+    }
+}
+
+.mainContainer {
+    margin: 0 auto; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    // background-image: linear-gradient(to top, rgba(255, 255, 255, 0.9) 80%,rgba(255, 255, 255, 0.9) 80%), url('../images/wateryplants.png'); 
+    width: 100%; 
+    // height: 120vh; 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    h4 {
+        margin: 2%;
+        text-align: center; 
+        color: @accent;  
     }
 
-    nav {
-        width: 40%;
+    .details{
+        width: 80%; 
+        height: 15vh; 
         display: flex; 
+        flex-direction: row;
+        margin: 3%; 
+        text-align: center; 
+        color: @darkText; 
+        
+        .steps {
+            margin: 0 2%; 
+            border-radius: 3px;
+        }
+        #offStep{
+            align-self: center;
+        }
+        #offStep2{
+            align-self: flex-end;
+            span {
+                color: @accent; 
+                font-weight: 1000; 
+            }
+        }
+    }
+    .buttonSection{
+        width: 25%; 
+        display: flex; 
+        flex-direction: column; 
+        padding: 2%; 
+        
+        .button{
+                display: flex;
+                justify-content: center;
+                // align-items: center;
+                // background-color: white;
+                border-radius: 3px;
+                border: 2px @accent solid; 
+                font-size: 1.2rem;
+                padding: 3%;
+                margin: 3%; 
+                box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+                // background-color: white; 
+                color: @accent; 
 
-        a{
-            padding: 15% 8% 0%; 
+                &:hover{
+                    color: white; 
+                    background-color: @accent; 
+                }
         }
     }
 }

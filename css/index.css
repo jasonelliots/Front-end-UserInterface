@@ -106,7 +106,6 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -150,37 +149,112 @@ table {
 * {
   box-sizing: border-box;
 }
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 4rem;
+  color: #35331a;
+}
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  color: #35331a;
 }
 nav {
   font-family: 'Open Sans', sans-serif;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #35331a;
 }
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding: 2%;
-  background-image: url('../images/horizontalplant.jpg');
+  background-image: url('../images/horizontalplant.png');
   width: 100%;
   height: 100vh;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-header h1 {
-  padding: 3% 6% 0%;
+header .navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .navBar h1 {
+  width: 40%;
+  padding: 3% 3% 0%;
   text-align: center;
 }
-header nav {
+header .navBar nav {
   width: 40%;
   display: flex;
 }
-header nav a {
-  padding: 15% 8% 0%;
+header .navBar nav a {
+  padding: 10% 8% 0%;
+  width: 100%;
+  font-size: 1.2rem;
+}
+header .navBar nav a:hover {
+  color: #056105ce;
+}
+.mainContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.mainContainer h4 {
+  margin: 2%;
+  text-align: center;
+  color: #056105ce;
+}
+.mainContainer .details {
+  width: 80%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  margin: 3%;
+  text-align: center;
+  color: #35331a;
+}
+.mainContainer .details .steps {
+  margin: 0 2%;
+  border-radius: 3px;
+}
+.mainContainer .details #offStep {
+  align-self: center;
+}
+.mainContainer .details #offStep2 {
+  align-self: flex-end;
+}
+.mainContainer .details #offStep2 span {
+  color: #056105ce;
+  font-weight: 1000;
+}
+.mainContainer .buttonSection {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.mainContainer .buttonSection .button {
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+  border: 2px #056105ce solid;
+  font-size: 1.2rem;
+  padding: 3%;
+  margin: 3%;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  color: #056105ce;
+}
+.mainContainer .buttonSection .button:hover {
+  color: white;
+  background-color: #056105ce;
 }
