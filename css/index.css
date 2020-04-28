@@ -154,7 +154,7 @@ body {
 }
 h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 4rem;
+  font-size: 4.2rem;
   color: #35331a;
 }
 h4 {
@@ -170,89 +170,202 @@ a {
   color: #35331a;
 }
 header {
-  padding: 2%;
-  background-image: url('../images/horizontalplant (1).jpg');
+  padding: 0 2%;
+  background-image: url("../images/horizontalplant (1).jpg");
   width: 100%;
   height: 100vh;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+@media (max-width: 500px) {
+  header {
+    padding: 2%;
+    background-image: url("../images/horizontalplant.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+  }
+}
 header .navBar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 2%;
+}
+@media (max-width: 500px) {
+  header .navBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 header .navBar h1 {
   width: 40%;
-  padding: 3% 3% 0%;
+  padding: 4% 2% 0%;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  header .navBar h1 {
+    text-align: left;
+  }
+}
+@media (max-width: 500px) {
+  header .navBar h1 {
+    width: 90%;
+    text-align: left;
+    padding: 0;
+  }
+}
 header .navBar nav {
-  width: 40%;
+  width: 45%;
+  margin: 6% 0% 0 0;
   display: flex;
 }
+@media (max-width: 1000px) {
+  header .navBar nav {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  header .navBar nav {
+    width: 100%;
+    margin: 6% 0 2% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 header .navBar nav a {
-  padding: 10% 8% 0%;
+  padding: 0% 8%;
   width: 100%;
   font-size: 1.2rem;
+  color: #35331a;
+}
+@media (max-width: 500px) {
+  header .navBar nav a {
+    padding: 3%;
+    text-align: left;
+  }
 }
 header .navBar nav a:hover {
   color: #056105ce;
 }
 .mainContainer {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin: 0 auto;
   width: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+@media (max-width: 500px) {
+  .mainContainer {
+    padding: 3%;
+  }
 }
 .mainContainer h4 {
   margin: 2%;
   text-align: center;
   color: #056105ce;
+  line-height: 2rem;
+}
+@media (max-width: 500px) {
+  .mainContainer h4 {
+    padding: 5% 0;
+    border-bottom: 1px solid #35331a;
+  }
 }
 .mainContainer .details {
-  width: 80%;
-  height: 15vh;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 75%;
+  height: 15vh;
   margin: 3%;
   text-align: center;
   color: #35331a;
+}
+@media (max-width: 1000px) {
+  .mainContainer .details {
+    height: 25vh;
+  }
+}
+@media (max-width: 500px) {
+  .mainContainer .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    margin: 5% 0;
+    padding: 8% 0 15% 0;
+    border-bottom: 1px solid #35331a;
+  }
 }
 .mainContainer .details .steps {
   margin: 0 2%;
   border-radius: 3px;
 }
+@media (max-width: 500px) {
+  .mainContainer .details .steps {
+    margin: 2%;
+  }
+}
 .mainContainer .details #offStep {
   align-self: center;
+}
+@media (max-width: 500px) {
+  .mainContainer .details #offStep {
+    align-self: unset;
+  }
 }
 .mainContainer .details #offStep2 {
   align-self: flex-end;
 }
+@media (max-width: 500px) {
+  .mainContainer .details #offStep2 {
+    align-self: unset;
+  }
+}
 .mainContainer .details #offStep2 span {
   color: #056105ce;
   font-weight: 1000;
+  font-size: 1.2rem;
 }
 .mainContainer .buttonSection {
-  width: 25%;
   display: flex;
   flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+  width: 25%;
   padding: 2%;
 }
 .mainContainer .buttonSection .button {
   display: flex;
   justify-content: center;
-  border-radius: 3px;
+  align-items: center;
+  background-color: none;
+  color: #056105ce;
   border: 2px #056105ce solid;
+  border-radius: 3px;
   font-size: 1.2rem;
   padding: 3%;
   margin: 3%;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-  color: #056105ce;
+}
+@media (max-width: 500px) {
+  .mainContainer .buttonSection .button {
+    margin: 10%;
+  }
 }
 .mainContainer .buttonSection .button:hover {
   color: white;
