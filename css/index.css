@@ -154,7 +154,7 @@ body {
 }
 h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 4.2rem;
+  font-size: 4.5rem;
   color: #35331a;
 }
 h4 {
@@ -194,7 +194,7 @@ header .navBar {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  margin-right: 2%;
+  margin-right: 3%;
 }
 @media (max-width: 500px) {
   header .navBar {
@@ -370,4 +370,63 @@ header .navBar nav a:hover {
 .mainContainer .buttonSection .button:hover {
   color: white;
   background-color: #056105ce;
+}
+.about {
+  background-image: url("../images/transparenthorizontal.png");
+  background-size: 50% 90%;
+  background-position: 100% 200%;
+  background-color: white;
+  height: 50vh;
+}
+@media (max-width: 500px) {
+  .about {
+    background-size: 75% 90%;
+    height: 100%;
+  }
+}
+.about h1 a:hover {
+  color: #056105ce;
+}
+.bioSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.bioSection .teamMember {
+  width: 25%;
+  margin: 4%;
+}
+@media (max-width: 1000px) {
+  .bioSection .teamMember {
+    width: 35%;
+  }
+}
+@media (max-width: 500px) {
+  .bioSection .teamMember {
+    width: 70%;
+  }
+}
+.bioSection .teamMember h2 {
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  margin: 2%;
+  text-align: center;
+}
+.bioSection .teamMember h3 {
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+.bioSection .teamMember img {
+  border-radius: 50%;
+  width: 100%;
+  opacity: 75%;
+}
+.bioSection .teamMember img:hover {
+  opacity: 100%;
+  border: 4px solid #056105ce;
 }
