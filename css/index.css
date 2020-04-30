@@ -350,6 +350,11 @@ header .navBar nav a:hover {
   width: 25%;
   padding: 2%;
 }
+@media (max-width: 500px) {
+  .mainContainer .buttonSection {
+    width: 40%;
+  }
+}
 .mainContainer .buttonSection .button {
   display: flex;
   justify-content: center;
@@ -361,16 +366,16 @@ header .navBar nav a:hover {
   font-size: 1.2rem;
   padding: 3%;
   margin: 3%;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 500px) {
   .mainContainer .buttonSection .button {
     margin: 10%;
+    width: 100%;
   }
 }
 .mainContainer .buttonSection .button:hover {
-  color: white;
-  background-color: #056105ce;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }
 .about {
   background-image: url("../images/transparenthorizontal.png");
@@ -400,6 +405,11 @@ header .navBar nav a:hover {
 .bioSection .teamMember {
   width: 25%;
   margin: 4%;
+}
+.bioSection .teamMember:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 @media (max-width: 1000px) {
   .bioSection .teamMember {
